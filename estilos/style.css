@@ -15,17 +15,17 @@ header>div{
 }
 
 header>img{
-    width: 180px;
+    width: 200px;
     border-radius: 90%;
-    margin-top: 5px;
+    margin-top: 16px;
     margin-bottom: -55px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 h1{
-    font-family:fantasy;
+    font-family: 'Orbitron', sans-serif;
     font-weight: normal;
-    font-size: 90px;
+    font-size: 76px;
     position: relative;
     margin: 40px 0;
 }
@@ -35,21 +35,21 @@ h1::before{
     position: absolute;
     width: 100px;
     height: 3px;
-    background-color: crimson;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     bottom: -10px;
     left: 50%;
     transform: translate(-50%);
-    animation: animate 5s linear infinite;
+    animation: animate 8s linear infinite;
 }
 @keyframes animate{
     0%{
-        width: 390px;
+        width: 520px;
     }
     50%{
-        width: 50px;
+        width: 150px;
     }
     100%{
-        width: 390px;
+        width: 520px;
     }
 }
 
@@ -62,6 +62,7 @@ h1::before{
     align-items: center;
     border-radius: 5px;
     box-shadow: 3px 3px 5px lightgrey;
+    margin-top: 15px;
 }
 
 h3{

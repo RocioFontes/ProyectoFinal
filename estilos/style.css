@@ -67,7 +67,7 @@ header>img{
     
 }
 
-h1{
+.titulo{
     text-align: center;
     font-family: 'Audiowide', cursive;
     font-weight: normal;
@@ -79,8 +79,8 @@ h1{
     color:rgba(13,84,50,1);
     text-shadow: -5px 2px 7px white ;
 }
-
-h1::before{
+ 
+.titulo::before{
     content: '';
     position: absolute;
     width: 100px;
@@ -148,14 +148,61 @@ h1::before{
 h2{
     text-align: center;
     font-family:monospace;
-    margin-top: -50px;
-    font-size: 33px;
+    margin-top: -70px;
+    font-size: 38px;
     margin-bottom: 15px;
     color:rgb(73, 71, 71);
+}
+
+.spancolor{
+    color: rgba(13,84,50,1);
+    text-decoration: underline;
 }
 
 h5{
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 22px;
+    font-size: 27px;
+}
+
+/*--------------------CARDS-------------------->*/
+
+.container{
+    margin-top: 40px;
+    display: flex;
+}
+
+.card{
+    height: 450px;
+    width: 500px;
+    margin: 40px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    background: rgba(13,84,50,1);
+}
+
+.imgcards{
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.letracards{
+    margin: 30px;
+    font-size: 29px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pcards{
+    font-size: 18px;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span{
+    font-weight: bold;
 }

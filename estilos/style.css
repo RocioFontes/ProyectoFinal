@@ -5,27 +5,28 @@
 }
 
 /*--------------------ENCABEZADO-------------------->*/
-header{
+header {
     width: 100%;
     background-color: black;
     padding: 20px;
-}
-
-header>div{
-   display: inline-block;
-}
-
-header>img{
+    text-align: center;
+  }
+  
+  header > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  header > img {
     width: 300px;
     border-radius: 150px;
-    box-shadow: 0px 0px 20px 0px rgba(117,213,140,1);
+    box-shadow: 0px 0px 20px 0px rgba(117, 213, 140, 1);
     margin-top: 45px;
     margin-bottom: -85px;
     margin-left: 190px;
-    
-}
-
-.titulo{
+  }
+  
+  .titulo {
     text-align: center;
     font-family: 'Audiowide', cursive;
     font-weight: normal;
@@ -34,41 +35,41 @@ header>img{
     margin-left: 140px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color:rgba(13,84,50,1);
-    text-shadow: -5px 2px 7px white ;
-}
- 
-.titulo::before{
+    color: rgba(13, 84, 50, 1);
+    text-shadow: -5px 2px 7px white;
+  }
+  
+  .titulo::before {
     content: '';
     position: absolute;
     width: 100px;
     height: 3px;
-    background-color: rgba(13,84,50,1);
+    background-color: rgba(13, 84, 50, 1);
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     animation: animate 6s linear infinite;
-}
-
-@keyframes animate{
-    0%{
-        width: 500px;
+  }
+  
+  @keyframes animate {
+    0% {
+      width: 500px;
     }
-    50%{
-        width: 150px;
+    50% {
+      width: 150px;
     }
-    100%{
-        width: 500px;
+    100% {
+      width: 500px;
     }
-}
-
-.letrainicio{
+  }
+  
+  .letrainicio {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 26px;
     text-align: center;
     margin-left: 200px;
-}
+  }
 
 /*--------------------NAVBAR-------------------->*/
 .top-content{
@@ -257,7 +258,6 @@ footer{
 .footer-bottom p{
     font-size: 14px;
     word-spacing: 2px;
-    text-transform: capitalize;
 }
 .footer-bottom span{
     text-transform: uppercase;
@@ -265,61 +265,99 @@ footer{
     font-weight: 200;
 }
 
-@media (max-width: 500px) {
-    .container {
-      grid-template-columns: 1fr;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    
-    .card {
-      height: 350px;
-      width: calc(100% - 20px);
-      margin: 10px;
-    }
-    
-    .imgcards {
-      height: 150px;
-    }
-    
-    .letracards {
-      margin: 20px;
-      font-size: 24px;
-    }
-    
-    .pcards {
-      margin: 10px;
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    .container {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    
-    .card {
-      height: 400px;
-      width: calc(100% - 20px);
-      margin: 10px;
-    }
-    
-    .imgcards {
-      height: 180px;
-    }
-    
-    .letracards {
-      margin: 20px;
-      font-size: 24px;
-    }
-    
-    .pcards {
-      margin: 10px;
-      font-size: 16px;
-    }
-  }
+/*--------------------ACERCA DE-------------------->*/
+
+.acercadeletra{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 70px;
+  text-align: center;
+  color:rgba(13, 84, 50, 1);
+  font-size: 50px;
+}
+.about-us {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 28px;
+}
+
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  padding: 40px;
+}
+
+.photo-gallery .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-gallery .photo {
+  flex-basis: 30%;
+  max-width: 30%;
+}
+
+.photo-gallery .photo img {
+  width: 100%;
+  height: auto;
+}
+/*--------------------CONTACTO-------------------->*/
+
+.contact-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.letracontacto{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:rgba(13, 84, 50, 1);
+}
+
+
+
+
   
   
   

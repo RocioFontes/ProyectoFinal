@@ -11,7 +11,7 @@ const start = () => {
         } else if (carrusel.scrollLeft === 0) {
             step = step * -1;
         }
-    }, 50);
+    }, 20);
 };
 
 const stop = () => {

@@ -360,18 +360,46 @@ button:hover {
 @media (max-width: 576px) {
    /* INDEX */
   /* Encabezado */
+  header > div {
+    display: block;
+  }
+
   header > img {
-    width: 200px;
+    width: 180px;
     margin-top: 20px;
     margin-bottom: 0;
     margin-left: 0;
   }
 
   .titulo {
-    font-size: 50px;
+    font-size: 45px;
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-shadow: -4px 1px 6px white;
+  }
+  .titulo::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: rgba(13, 84, 50, 1);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 6s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      width: 250px;
+    }
+    50% {
+      width: 150px;
+    }
+    100% {
+      width: 250px;
+    }
   }
 
   .letrainicio {

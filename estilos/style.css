@@ -356,9 +356,155 @@ button:hover {
 }
 
 
+/* Media Query para 576px */
+@media (max-width: 576px) {
+   /* INDEX */
+  /* Encabezado */
+  header > img {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 
+  .titulo {
+    font-size: 50px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
+  .letrainicio {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  /* NavBar */
+  .top-content {
+        font-size: 30px;
+    }
+
+    a {
+        margin: 10px;
+        line-height: 60px;
+        font-size: 14px;
+    }
+
+    /* Carrusel */
+    .carrusel {
+        margin-top: 10px; 
+        height: auto;
+    }
+    
+    .carrusel-items {
+        flex-wrap: nowrap; 
+        padding: 10px;
+        overflow-x: hidden;
+    }
+    
+    .carrusel-item {
+        min-width: 300px; 
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Introducción */
+     h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Cards */
+    .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .card {
+    height: 400px;
+  }
+
+  .letracards {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  .pcards {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  /* Footer */
+   .footer-content h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+  }
+
+  .socials li {
+    margin: 0 5px;
+  }
+
+  .socials a i {
+    font-size: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+  }
+
+  /* ACERCA DE */
+  /* Texto */
+  .container{
+    margin-top: 5px;
+  }
+  .acercadeletra {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+
+  .about-us {
+    margin: 30px;
+    font-size: 22px;
+  }
+  /* Imagenes*/
+  .photo-gallery .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-gallery .photo {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* CONTACTO */
+  /* Formulario */
+  .contact-container {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 40px;
+  }
   
+  .letracontacto {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  
+  .form-group {
+    font-size: 16px;
+  }
+}
+
   
   
   

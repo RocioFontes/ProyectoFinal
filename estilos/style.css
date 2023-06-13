@@ -152,46 +152,47 @@ h3{
 
 /*--------------------CARDS-------------------->*/
 
-.container{
+.container {
     margin-top: 40px;
-    display: flex;
-}
-
-.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 10px;
+  }
+  
+  .card {
     height: 450px;
-    width: 500px;
-    margin: 40px;
+    width: 100%;
+    margin: 0 10px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
-    background: rgba(13,84,50,1);
-}
-
-.imgcards{
+    background: rgba(13, 84, 50, 1);
+  }
+  
+  .imgcards {
     height: 200px;
-    width: 300px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 3px;
-}
-
-.letracards{
+  }
+  
+  .letracards {
     margin: 30px;
     font-size: 29px;
     text-align: center;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.pcards{
+  }
+  
+  .pcards {
     font-size: 18px;
     margin: 15px;
     text-align: center;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-span{
-    font-weight: bold;
-}
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
 /*--------------------FOOTER-------------------->*/
 
 footer{
@@ -264,21 +265,66 @@ footer{
     font-weight: 200;
 }
 
-
-
-@media (max-width:1200px){
-    header>img{
-        display: inline-block;
-        width: 250px;
+@media (max-width: 500px) {
+    .container {
+      grid-template-columns: 1fr;
+      margin-left: 10px;
+      margin-right: 10px;
     }
-    .titulo{
-        font-size: 70px;
+    
+    .card {
+      height: 350px;
+      width: calc(100% - 20px);
+      margin: 10px;
     }
-    .carrusel{
-        margin-top: -380px;
+    
+    .imgcards {
+      height: 150px;
     }
-    h3{
-        margin-top: -500;
+    
+    .letracards {
+      margin: 20px;
+      font-size: 24px;
     }
-
-}
+    
+    .pcards {
+      margin: 10px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .card {
+      height: 400px;
+      width: calc(100% - 20px);
+      margin: 10px;
+    }
+    
+    .imgcards {
+      height: 180px;
+    }
+    
+    .letracards {
+      margin: 20px;
+      font-size: 24px;
+    }
+    
+    .pcards {
+      margin: 10px;
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
